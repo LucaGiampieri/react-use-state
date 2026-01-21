@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import MainHeader from './MainHeader'
-import MainContent from './MainContent'
+import MainContent from './components/MainContent'
 
 function App() {
   const [count, setCount] = useState(0)
