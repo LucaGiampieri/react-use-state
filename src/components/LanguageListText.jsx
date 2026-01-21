@@ -1,9 +1,12 @@
 function LanguagesListText(props) {
 
-    const { description } = props.language;
+    const { title, description } = props.language;
 
     return (
-        <p className="text">{description}</p>
+        <div className="text-container">
+            <h2 className="text-title">{title}</h2>
+            <p className="text">{description}</p>
+        </div>
     )
 }
 
