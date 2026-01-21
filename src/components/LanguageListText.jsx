@@ -1,5 +1,4 @@
 function LanguagesListText(props) {
-
     const { title, description } = props.language;
 
     return (
@@ -7,7 +6,7 @@ function LanguagesListText(props) {
             <h2 className="text-title">{title}</h2>
             <p className="text">{description}</p>
         </div>
-    )
+    );
 }
 
-export default LanguagesListText
+export default LanguagesListText;
