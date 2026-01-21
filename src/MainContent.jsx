@@ -13,8 +13,14 @@ function MainContent() {
                 key={language.id}
                 language={language}
                 //al click salviamo tramite setActiveButton il language.id del bottone che è stato cliccato
-                onClick={() => setActiveButton(language.id)}
-                //ora activeButton è uguale a language.id
+                onClick={() =>
+                    setActiveButton(
+                        //ma se il bottone che sto cliccando è già quello "cliccato (attivo)" torna in null (situazione originale)
+                        activeButton === language.id ? null : language.id
+                        //altrimenti fa quello che abbiamo detto sopra
+                    )
+                }
+                //ora activeButton è uguale a language.id o uguale a null nel caso il bottone fosse già "cliccato"
                 isActive={activeButton === language.id}
             //in questo modo isActive è vero solo per il bottone cliccato, in quanto come detto prima activeButton è uguale language.id grazie click
             />
