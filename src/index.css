@@ -15,3 +15,35 @@
 }
 
 /* Main */
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Button */
+
+.btn-container {
+  display: flex;
+  margin: 3rem 0;
+  gap: 2rem;
+
+}
+
+.btn {
+  padding: 1rem;
+  color: white;
+  background-color: #0D6EFD;
+  border: none;
+  border-radius: 5px;
+  font-size: 2rem;
+}
+
+/* Text */
+
+.text {
+  padding: 3rem;
+  font-size: 3rem;
+  border: 2px solid black;
+  border-radius: 5px;
+}

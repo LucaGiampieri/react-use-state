@@ -1,11 +1,21 @@
 import languages from "./data/Languages"
-import LanguagesList from "./components/LanguagesList"
+import LanguagesListButton from "./components/LanguagesListButton"
+import LanguagesListText from "./components/LanguageListText"
 
 function MainContent() {
 
-    function LanguageButtonAndCardRender() {
+    function LanguageButtonRender() {
         return languages.map((language) => (
-            <LanguagesList
+            <LanguagesListButton
+                key={language.id}
+                language={language}
+            />
+        ))
+    }
+
+    function LanguageTextRender() {
+        return languages.map((language) => (
+            <LanguagesListText
                 key={language.id}
                 language={language}
             />
@@ -13,11 +23,14 @@ function MainContent() {
     }
 
     return (
-        <section className="main-container">
-            {LanguageButtonAndCardRender()}
+
+        <section className="main">
+            <div className="btn-container">
+                {LanguageButtonRender()}
+            </div>
+            {LanguageTextRender()}
         </section >
     )
 }
-
 
 export default MainContent
