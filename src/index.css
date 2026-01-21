@@ -1,0 +1,15 @@
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+
+.header-title {
+  background-color: #F8F9FA;
+  padding: 1rem;
+  font-size: 4rem;
+}
